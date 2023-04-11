@@ -15,11 +15,11 @@ namespace CSLight
             uint phoneNomer;
             char sumSymbol;
             string name;
-            bool robotTest;
+            bool thisCourseSmall;
             float pValue;
             double averageSource;
-            sbyte youreFingers;
-            short Id;
+            sbyte nomberOfFingers;
+            short numberOfCountries;
         }
     }
 }
