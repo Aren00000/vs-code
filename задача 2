@@ -15,8 +15,7 @@ namespace CSLight
             uint phoneNomer;
             char sumSymbol;
             string name;
-            bool robotTest
-;
+            bool robotTest;
             float pValue;
             double averageSource;
             sbyte youreFingers;
