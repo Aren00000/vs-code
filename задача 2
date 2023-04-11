@@ -13,9 +13,10 @@ namespace CSLight
             byte dayNumber;
             int worldPopulation;
             uint phoneNomer;
-            char SUMSymbol;
+            char sumSymbol;
             string name;
-            bool youAreRobot;
+            bool robotTest
+;
             float pValue;
             double averageSource;
             sbyte youreFingers;
