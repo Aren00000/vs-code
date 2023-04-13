@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSLight
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            int brYear;
+            int phonNomer;
+
+            Console.WriteLine("как вас зовут?");
+            name = Convert.ToString((Console.Read()));
+            Console.WriteLine("когда вы родились?");
+            brYear = Convert.ToInt32(Console.Read());
+            Console.WriteLine("укажите ваш номер?");
+            phonNomer = Convert.ToInt32(Console.Read());
+
+            Console.WriteLine($"{name} , вам {2022 - brYear} лет , мы позвонтм вам на ваш номер ({phonNomer}) или отправим вам сообшение. ");
+        }
+    }
+}
