@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int money;
+            int crystal;
+            int possibleToBuy;
+            int n = 5;
+
+            Console.WriteLine("добро пожаловать");
+            Console.WriteLine("сколько у вас монет:");
+            money = Convert.ToInt32(Console.ReadLine());
+            possibleToBuy = money / n;
+            Console.WriteLine($"Вы можете купить {possibleToBuy} кристалов по цене {n} монет");
+            Console.WriteLine("сколько кристалов вы хотите купить:");
+            crystal = Convert.ToInt32(Console.ReadLine());
+            money -= n * crystal;
+            Console.WriteLine($"у вас есть {crystal} кристалов и {money} монет");
+            Console.WriteLine("хорошего вам дня");
+        }
+    }
+}
