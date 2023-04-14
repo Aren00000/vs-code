@@ -19,7 +19,6 @@ namespace CSLight
             name = surname;
             surname = name;
             Console.WriteLine($"name ={name} surname ={surname} ");
-
         }
     }
 }
