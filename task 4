@@ -13,7 +13,7 @@ namespace CSLight
             string name;
             int yearOfBirth 
             int age;
-            int phonNomer;
+            int phonNumber;
             int year = 2022;
 
             Console.WriteLine("как вас зовут?");
