@@ -11,18 +11,20 @@ namespace CSLight
         static void Main(string[] args)
         {
             string name;
-            int yearOfBirth , age;
+            int yearOfBirth 
+            int age;
             int phonNomer;
+            int year = 2022;
 
             Console.WriteLine("как вас зовут?");
             name = Convert.ToString((Console.Read()));
             Console.WriteLine("когда вы родились?");
             yearOfBirth= Convert.ToInt32(Console.Read());
             Console.WriteLine("укажите ваш номер?");
-            phonNomer = Convert.ToInt32(Console.Read());
+            phonNumber = Convert.ToInt32(Console.Read());
 
-            age = 2022 - yearOfBirth;
-            Console.WriteLine($"{name} , вам {age} лет , мы позвонтм вам на ваш номер ({phonNomer}) или отправим вам сообшение. ");
+            age = year - yearOfBirth;
+            Console.WriteLine($"{name} , вам {age} лет , мы позвонтм вам на ваш номер ({phonNumber}) или отправим вам сообшение. ");
         }
     }
 }
