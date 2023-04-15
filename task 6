@@ -12,11 +12,13 @@ namespace CSLight
         {
             int pictures = 52;
             int picturesInRow = 3;
-            int rows;
-            int extrapictures;
-            rows = pictures / picturesInRow;
-            extrapictures = pictures % picturesInRow;
-            Console.WriteLine($"У вас есть полностью заполненных рядов:{rows}, лишних картинок:{extrapictures}.") ;
+            int filledRows;
+            int extraPictures;
+            
+            filledRows = pictures / picturesInRow;
+            extraPictures = pictures % picturesInRow;
+            
+            Console.WriteLine($"У вас есть полностью заполненных рядов:{filledRows}, лишних картинок:{extraPictures}.");
         }
     }
 }
