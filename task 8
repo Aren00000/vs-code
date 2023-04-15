@@ -16,7 +16,7 @@ namespace ConsoleApp1
             int waitingTime;
             int hoursInLine;
             int minutesInLine;
-            Int minutesInHour;
+            int minutesInHour;
             Console.WriteLine("сколько человек в очереди");
             numberOfPeople = Convert.ToInt32(Console.ReadLine());
 
