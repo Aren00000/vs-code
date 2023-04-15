@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int  numberOfPeople;
+            int onePersonTime = 10;
+            int waitingTime;
+            int haurs;
+            int minutes;
+
+            Console.WriteLine("сколько человек в очереди");
+            numberOfPeople = Convert.ToInt32(Console.ReadLine());
+
+            waitingTime = onePersonTime * numberOfPeople;
+            haurs = waitingTime / 60;
+            minutes = waitingTime % 60;
+
+            Console.WriteLine($"вам нужно подождать {haurs} часов и {minutes} минут.");
+
+
+        }
+    }
+}
