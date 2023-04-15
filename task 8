@@ -14,19 +14,17 @@ namespace ConsoleApp1
             int  numberOfPeople;
             int onePersonTime = 10;
             int waitingTime;
-            int haurs;
-            int minutes;
-
+            int hoursInLine;
+            int minutesInLine;
+            Int minutesInHour
             Console.WriteLine("сколько человек в очереди");
             numberOfPeople = Convert.ToInt32(Console.ReadLine());
 
             waitingTime = onePersonTime * numberOfPeople;
-            haurs = waitingTime / 60;
-            minutes = waitingTime % 60;
+            hoursInLine = waitingTime / minutesInHour;
+            minutesInLine = waitingTime % minutesInHour;
 
-            Console.WriteLine($"вам нужно подождать {haurs} часов и {minutes} минут.");
-
-
+            Console.WriteLine($"вам нужно подождать {hoursInLine} часов и {minutesInLine} минут.");
         }
     }
 }
