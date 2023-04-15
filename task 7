@@ -13,16 +13,20 @@ namespace ConsoleApp1
             int money;
             int crystal;
             int possibleToBuy;
-            int n = 5;
+            int priceOfCrystals = 5;
 
             Console.WriteLine("добро пожаловать");
             Console.WriteLine("сколько у вас монет:");
             money = Convert.ToInt32(Console.ReadLine());
-            possibleToBuy = money / n;
+            
+            possibleToBuy = money / priceOfCrystals;
+            
             Console.WriteLine($"Вы можете купить {possibleToBuy} кристалов по цене {n} монет");
             Console.WriteLine("сколько кристалов вы хотите купить:");
             crystal = Convert.ToInt32(Console.ReadLine());
-            money -= n * crystal;
+            
+            money -= priceOfCrystals * crystal;
+            
             Console.WriteLine($"у вас есть {crystal} кристалов и {money} монет");
             Console.WriteLine("хорошего вам дня");
         }
